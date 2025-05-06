@@ -4,9 +4,9 @@ version = "0.0.0"
 
 [tool.commitizen]
 name = "cz_customize"
-version = "0.0.0"
-tag_format = "${version}"
+version_provider = "pep621"
 update_changelog_on_bump = true
+changelog_incremental = true
 
 [tool.commitizen.customize]
 changelog_pattern = "^(feat|fix)\\(repo-b(\\.\\w+)*\\)(!)?:"
