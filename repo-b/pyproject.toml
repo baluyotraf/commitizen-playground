@@ -4,8 +4,7 @@ version = "0.0.0"
 
 [tool.commitizen]
 name = "cz_customize"
-version_provider = "commitizen"
-update_changelog_on_bump = true
+update_changelog_on_bump = false
 changelog_incremental = true
 
 [tool.commitizen.customize]

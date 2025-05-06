@@ -3,8 +3,8 @@ name = "cz_conventional_commits"
 version = "0.0.0"
 version_provider = "commitizen"
 version_files = [
-  "repo-a/pyproject.toml:tool.commitizen.version",
-  "repo-b/pyproject.toml:tool.commitizen.version",
+  "repo-a/pyproject.toml:version",
+  "repo-b/pyproject.toml:version",
   "repo-a/__version__.py",
 ]
 tag_format = "v$version"
