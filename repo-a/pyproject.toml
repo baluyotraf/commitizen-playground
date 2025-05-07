@@ -1,6 +1,6 @@
 [project]
 name = "repo-a"
-version = "0.0.0"
+version = "0.1.0"
 
 [tool.commitizen]
 name = "cz_customize"
@@ -8,5 +8,8 @@ update_changelog_on_bump = false
 changelog_incremental = true
 
 [tool.commitizen.customize]
-changelog_pattern = "^(feat|fix)\\(repo-a(\\.\\w+)*\\)(!)?:"
+changelog_pattern = "^(feat|fix|refactor|docs|perf)\\(repo-b(\\.\\w+)*\\)(!)?:"
+change_type_order = ["Added", "Changed", "Fixed", "Documentation"]
+commit_parser = "^(?P<change_type>\\w+)\\(repo-b(\\.\\w+)*\\)(!)?:\\s(?P<message>.*)?"
+change_type_map = {"feat" = "Added", "fix" = "Fixed", "perf" = "Changed", "docs" = "Documentation", "refactor" = "Changed"}
 
